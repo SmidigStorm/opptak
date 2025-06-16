@@ -54,6 +54,11 @@
 - Utdanningstilbudene må prioriteres av søkeren (1️⃣ prioritet, 2️⃣ prioritet, osv.)
 - Evalueres basert på personens dokumentasjon
 
+## 📋 Regelsettmal
+- Standardisert utgangspunkt for vanlige utdanningstyper
+- Kan tilpasses av institusjoner med egne krav
+- Sikrer konsistens og forenkler opprettelse av regelsett
+
 ## 🔗 Relasjoner
 - En **person** kan ha mange **søknader**
 - En **person** eier sin **dokumentasjon**
@@ -63,6 +68,7 @@
 - En **institusjon** kan ha mange **utdanningstilbud**
 - En **utdanningsspesifikasjon** kan brukes av mange **institusjoner**
 - Et **utdanningstilbud** har ett tilknyttet **regelsett**
+- Et **regelsett** kan baseres på en **regelsettmal**
 - Et **regelsett** definerer **kvalifiseringsveier** for det spesifikke tilbudet
 - En **kvalifiseringsvei** kan gi tilgang til flere **kvoter**
 - **Dokumentasjon** avgjør hvilke **kvalifiseringsveier** som kan brukes for en **person**

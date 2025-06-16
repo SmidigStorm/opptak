@@ -14,6 +14,7 @@ Et regelsett inneholder flere "veier" til opptak. Hver vei har:
   - 📈 Karakterkrav
   - 📖 Fagkrav  
   - 🎓 Utdanningskrav
+  - 📝 Opptaksprøver
   - ✅ Andre kvalifikasjonskrav
 
 ### 2️⃣ Tilhørende kvoter
@@ -61,25 +62,30 @@ Et regelsett inneholder flere "veier" til opptak. Hver vei har:
 ## 💡 Eksempel: Ingeniørutdanning
 Et regelsett for ingeniørutdanning kan inneholde veier som:
 
-1. **Generell studiekompetanse**
-   - Krav: Bestått videregående med studiekompetanse
-   - Kvoter: Ordinær kvote + Førstegangsvitnemål (hvis nylig fullført)
-   - Rangering: Karaktersnitt + ev. tilleggspoeng
+1. **Generell studiekompetanse (GSK)**
+   - Krav: Fullført videregående med studiekompetanse + matematikk R1/S1+S2
+   - Kvoter: Ordinær kvote + Førstegangsvitnemål (hvis under 21 år)
+   - Rangering: Karaktersnitt + realfagspoeng + ev. andre tilleggspoeng
 
-2. **Fagbrev + realfag**
-   - Krav: Fagbrev + påbygging med realfag
+2. **Y-veien (Yrkesfaglig)**
+   - Krav: Fagbrev + påbygging med realfag (matematikk R1/S1+S2)
    - Kvoter: Ordinær kvote
    - Rangering: Spesiell vekting av fagbrev og realfagskarakterer
 
 3. **Forkurs ingeniør**
-   - Krav: Fullført forkurs for ingeniør
+   - Krav: Fullført godkjent forkurs for ingeniør
    - Kvoter: Forkurskvote + Ordinær kvote
-   - Rangering: Karakterer fra forkurs
+   - Rangering: Karakterer fra forkurs + ev. tilleggspoeng
 
-4. **Realkompetanse**
-   - Krav: 25 år + relevant arbeidserfaring
-   - Kvoter: Egen realkompetansekvote
-   - Rangering: Individuell vurdering
+4. **23-5 regelen**
+   - Krav: 23 år + 5 års erfaring + 6-pakken + matematikk R1/S1+S2
+   - Kvoter: Ordinær kvote (evt. realkompetansekvote)
+   - Rangering: Karakterer i realfag + arbeidserfaring
+
+5. **Fagskole**
+   - Krav: 120 studiepoeng fagskole + realfagskrav
+   - Kvoter: Ordinær kvote
+   - Rangering: Fagskolekarakterer + realfagskarakterer
 
 ## 🔄 Samspill mellom elementene
 1. Først sjekkes om søker oppfyller **krav** for minst én vei
