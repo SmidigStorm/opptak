@@ -59,6 +59,11 @@
 - Kan tilpasses av institusjoner med egne krav
 - Sikrer konsistens og forenkler opprettelse av regelsett
 
+## 📋 Venteliste
+- Liste over søkere som kan få plass hvis andre takker nei
+- Rangert etter samme kriterier som hovedopptaket
+- Oppdateres dynamisk når plasser frigjøres
+
 ## 🔗 Relasjoner
 - En **person** kan ha mange **søknader**
 - En **person** eier sin **dokumentasjon**
@@ -72,3 +77,4 @@
 - Et **regelsett** definerer **kvalifiseringsveier** for det spesifikke tilbudet
 - En **kvalifiseringsvei** kan gi tilgang til flere **kvoter**
 - **Dokumentasjon** avgjør hvilke **kvalifiseringsveier** som kan brukes for en **person**
+- Et **utdanningstilbud** kan ha en **venteliste** med rangerte søkere
