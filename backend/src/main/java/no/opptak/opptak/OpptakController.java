@@ -13,7 +13,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/opptak")
-@CrossOrigin(origins = "http://localhost:3001")
 public class OpptakController {
 
     private final OpptakService opptakService;

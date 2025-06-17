@@ -11,7 +11,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/institusjoner")
-@CrossOrigin(origins = "http://localhost:3001")
 public class InstitusjonController {
 
     private final InstitusjonService institusjonService;
