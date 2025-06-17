@@ -42,11 +42,22 @@
 
 ## 🎯 Opptak
 - Et opptak som søkere kan søke til
-- Kan bestå av flere utdanningstilbud fra samme eller forskjellige institusjoner
+- Har definerte søknadsfrister, svarfrister og studieopptaksfrister
+- Kan være aktivt eller inaktivt
+- Typer:
+  - 🇳🇴 **Samordnet opptak**: Koordinert nasjonal prosess for de fleste studieplasser
+  - 🏛️ **Lokalt opptak**: Institusjonsspesifikt opptak for utvalgte programmer
+  - 🎓 **Direkte opptak**: For spesielle programmer eller videreutdanning
+- Attributter:
+  - 📅 Semester og år (f.eks. Høst 2025)
+  - 📆 Søknadsfrist, svarselskapsfrist, studieopptaksfrist
+  - 🔢 Maks søknader per person
+  - 📊 Status (Åpen, Stengt, Avsluttet, Fremtidig)
+  - 🔄 Opptaksomgang (Hovedomgang, Tilleggsomgang, Løpende)
 - Eksempler:
-  - 🇳🇴 Samordna opptak (alle universiteter og høyskoler)
-  - 🏛️ Lokalt opptak ved NTNU
-  - 🎓 Masteropptak UiO
+  - Samordnet opptak høst 2025
+  - Lokalt opptak ved NTNU vår 2025
+  - Masteropptak UiO høst 2025
 
 ## 📝 Søknad
 - En persons søknad til et opptak

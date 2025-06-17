@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:16-alpine
+    container_name: opptak-database
+    environment:
+      POSTGRES_DB: opptak
+      POSTGRES_USER: opptak_user
+      POSTGRES_PASSWORD: opptak_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U opptak_user -d opptak"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: opptak-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/opptak
+      SPRING_DATASOURCE_USERNAME: opptak_user
+      SPRING_DATASOURCE_PASSWORD: opptak_password
+    depends_on:
+      database:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: opptak-frontend
+    ports:
+      - "3001:3000"
+    environment:
+      VITE_API_URL: http://localhost:8080/api
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

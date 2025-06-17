@@ -8,7 +8,20 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(find:*)",
-      "WebFetch(domain:lovdata.no)"
+      "WebFetch(domain:lovdata.no)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(rmdir:*)",
+      "Bash(rm:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker-compose:*)",
+      "Bash(docker run:*)",
+      "Bash(curl:*)",
+      "Bash(docker logs:*)",
+      "Bash(echo)"
     ],
     "deny": []
   }

@@ -1,5 +1,18 @@
 # Arbeidsmetoder
 
+## Tech Stack
+- 🎨 **Frontend**: React med Vite
+- ⚙️ **Backend**: Spring Boot med Maven
+- 🗄️ **Database**: PostgreSQL
+- 🐳 **Deployment**: Docker Compose
+- 📁 **Struktur**: Mono-repo (alt i samme repository)
+
+## Tekniske prinsipper
+- **Enkelhet først**: Velg alltid den enkleste løsningen som fungerer
+- **Anti-Yak Shaving**: Gå til roten av problemer, ikke symptomene
+- **Ingen quick-fixes**: Implementer fundamentale løsninger som varer over tid
+- **Forståelig arkitektur**: Alt skal være enkelt å forstå og jobbe videre på
+
 ## Språkbruk
 - Hele appen skal være på norsk
 - Tekniske begreper brukes på engelsk (f.eks. component, state, props, database, API, osv.)
