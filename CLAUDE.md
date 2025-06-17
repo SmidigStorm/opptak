@@ -38,3 +38,38 @@
 - Oppdater eksisterende dokumentasjon når nye konsepter introduseres
 - Slå sammen relaterte konsepter i samme fil for bedre oversikt
 - Bruk konsistente begreper gjennom hele prosjektet
+
+## Setup og kjøring av applikasjonen
+
+### Standard oppsett
+Applikasjonen startes med:
+```bash
+docker-compose up --build -d
+```
+
+### Vanlige problemer og løsninger
+
+#### Database-migreringsfeil
+**Problem**: Backend feiler med "null value in column 'institusjon_id' violates not-null constraint"
+**Årsak**: V3-migreringen (utdanningstilbud) prøver å referere til institusjoner som ikke finnes ennå
+**Løsning**: Institusjonsdata må legges til i V1-migreringen før V3 kjøres
+
+**Fix implementert**: Lagt til test-data for NTNU, UiO og Høgskolen i Østfold i V1__Initial_schema.sql
+
+#### Restart ved problemer
+Ved migreringsfeild:
+```bash
+docker-compose down -v  # Sletter database-volum
+docker-compose up --build -d
+```
+
+### Verifikasjon av tjenester
+- Frontend: http://localhost:3001 (skal returnere HTTP 200)
+- Backend API: http://localhost:8080/api/institusjoner (skal returnere HTTP 200)
+- Database: Port 5432, healthy status i `docker-compose ps`
+
+### Testdata
+Systemet har følgende testdata etter vellykket oppsett:
+- 3 institusjoner (NTNU, UiO, HiØ)
+- 2 utdanningstilbud (Informatikk-Bachelor, Samfunnsøkonomi-Master)
+- Alle med fullstendige relasjoner og gyldig institusjon_id
