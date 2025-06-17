@@ -18,7 +18,7 @@ Et moderne opptakssystem for norske utdanningsinstitusjoner, bygget med enkle og
 ### Setup
 1. **Klon repositoriet**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SmidigStorm/opptak.git
    cd opptak
    ```
 
@@ -28,9 +28,12 @@ Et moderne opptakssystem for norske utdanningsinstitusjoner, bygget med enkle og
    ```
 
 3. **Tilgang til tjenestene**
-   - Frontend: http://localhost:3000
+   - Frontend: http://localhost:3001
    - Backend API: http://localhost:8080/api
    - Database: localhost:5432 (database: opptak, user: opptak_user)
+
+### Produksjonsoppsett
+Se [PRODUCTION_SETUP.md](PRODUCTION_SETUP.md) for detaljert veiledning om produksjonsdeployment.
 
 ### Utvikling
 
@@ -72,10 +75,28 @@ opptak/
 ## 📚 Domenekunnskap
 
 Prosjektet inneholder omfattende domenedokumentasjon i `domenekunnskap/` mappen som beskriver:
-- Hovedentiteter og relasjoner
-- Opptaksregler og kvalifiseringsveier
-- Aktører og organisasjoner
-- Regelsett og kvoter
+- **Hovedentiteter og relasjoner** - Personer, institusjoner, utdanningstilbud, opptak
+- **Opptak og søknadsprosess** - Samordnet opptak, lokale opptak, frister
+- **Opptaksregler og kvalifiseringsveier** - Generell studiekompetanse, realkompetanse, Y-veien
+- **Aktører og organisasjoner** - HK-dir, Samordna opptak, Unit
+- **Regelsett og kvoter** - Førstegangsvitnemål, ordinær kvote
+- **Teknisk arkitektur** - Tech stack, deployment, CORS-konfigurasjon
+
+## 🔧 Hovedfunksjonalitet
+
+### Implementerte moduler
+- **Institusjoner** - CRUD for utdanningsinstitusjoner
+- **Personer** - Håndtering av søkere med kontaktinfo
+- **Utdanningstilbud** - Studieprogram med nivå, fagområde og kapasitet
+- **Opptak** - Samordnet og lokale opptak med fristovervåkning
+
+### Tekniske features
+- Full CRUD-funksjonalitet for alle moduler
+- Avansert filtrering og søk
+- Debounced søkefelt for bedre ytelse
+- Responsivt design med kort-basert layout
+- Automatisk statusbehandling basert på frister
+- CORS-støtte for produksjonsmiljø
 
 ## 🔧 Utvikling
 
