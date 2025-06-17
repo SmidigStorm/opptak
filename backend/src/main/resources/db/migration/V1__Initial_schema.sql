@@ -36,3 +36,38 @@ CREATE TRIGGER institusjon_updated_timestamp
     BEFORE UPDATE ON institusjon
     FOR EACH ROW
     EXECUTE FUNCTION update_updated_timestamp();
+
+-- Legg til test-data for institusjoner
+INSERT INTO institusjon (
+    institusjonsnavn, organisasjonsnummer, type, adresse, postnummer, poststed, epost, telefon
+) VALUES 
+(
+    'NTNU',
+    '974767880',
+    'Universitet',
+    'Høgskoleringen 1',
+    '7491',
+    'Trondheim',
+    'post@ntnu.no',
+    '73 59 50 00'
+),
+(
+    'Universitetet i Oslo',
+    '971035854',
+    'Universitet',
+    'Problemveien 7',
+    '0313',
+    'Oslo',
+    'post@uio.no',
+    '22 85 50 50'
+),
+(
+    'Høgskolen i Østfold',
+    '970468677',
+    'Høyskole',
+    'Remmen 1',
+    '1757',
+    'Halden',
+    'post@hiof.no',
+    '69 60 80 00'
+);
